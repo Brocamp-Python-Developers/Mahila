@@ -5,5 +5,6 @@ app_name = 'user_home'
 urlpatterns = [
     path('', views.home, name='home'),
     path('awareness_and_education/', views.awareness_and_education, name = 'awareness_and_education'),
-    path('support_helpline_section/', views.support_helpline_section, name = 'support_helpline_section')
+    path('support_helpline_section/', views.support_helpline_section, name = 'support_helpline_section'),
+    path('womens_wellness/', views.womens_wellness, name = 'womens_wellness'),
 ]

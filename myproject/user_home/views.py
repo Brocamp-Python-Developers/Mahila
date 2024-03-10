@@ -21,3 +21,6 @@ def support_helpline_section(request):
         messages.success(request, "Your message has been sent")
     
     return render(request, 'user_home/support_helpline_section.html')
+
+def womens_wellness(request):
+    return render(request, 'user_home/womens_wellness.html')
