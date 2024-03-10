@@ -1,5 +1,9 @@
 .env
 hackenv/
+<<<<<<< HEAD
+mahilaenv/
+=======
 mahilaenv/
 menv/
 *.pyc
+>>>>>>> b861954ba90aa7ac0c08a8fa396dbf656301efad

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Stylish Portfolio - Start Bootstrap Template</title>
+        <title>Mahila</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -20,17 +20,7 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-                <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+ 
         <!-- Header-->
         <header class="masthead d-flex align-items-center">
             <div class="container px-4 px-lg-5 text-center">
@@ -47,21 +37,14 @@
                     <h2 class="mb-5">What We Offer</h2>
                 </div>
                 <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <a href="#women_wellness_section" style="text-decoration: none; color: white;">
+                    <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                        <a href="{% url 'user_home:womens_wellness' %}" style="text-decoration: none; color: white;">
                             <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-heartbeat"></i></span>
                             <h4><strong>Women's Wellness</strong></h4>
                         </a>
-                        <p class="text-faded mb-0">Empowering Women: Your Guide to Holistic Health and Wellness</p>
+                        <p class="text-faded mb-0">Your Guide to Holistic Health and Wellness</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <a href="#legal_aid_section" style="text-decoration: none; color: white;">
-                            <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-balance-scale"></i></span>
-                            <h4><strong>Legal Aid and Advocacy</strong></h4>
-                        </a>
-                        <p class="text-faded mb-0">Empowering Women Through Legal Knowledge and Advocacy</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                    <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
                         <a href="{% url 'user_home:support_helpline_section' %}" style="text-decoration: none; color: white;">
                             <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-phone-alt"></i></span>
                             <h4><strong>Support Helpline</strong></h4>
@@ -71,16 +54,15 @@
                             <i class="fas fa-heart"></i>
                         </p>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <a href="{% url 'user_home:awareness_and_education' %}" style="text-decoration: none; color: white;">
                             <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-graduation-cap"></i></span>
                             <h4><strong>Awareness and Education</strong></h4>
                         </a>
-                        <p class="text-faded mb-0">Empowering Women Through Knowledge and Awareness</p>
+                        <p class="text-faded mb-0">Guiding Women Through Knowledge and Awareness</p>
                     </div>
                                         
                 </div>
-                <a class="btn btn-light btn-xl mt-5" href="#follow-up">What We Offer</a>
             </div>
         </section>
         <!-- <section class="bg-light py-5" id="follow-up">
