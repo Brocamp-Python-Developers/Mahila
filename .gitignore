@@ -1,3 +1,5 @@
 .env
 hackenv/
 mahilaenv/
+menv/
+*.pyc
