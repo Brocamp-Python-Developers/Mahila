@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import*
 from django.contrib import messages
 
@@ -17,6 +17,9 @@ def support_helpline_section(request):
         phone_no = request.POST.get('phone')
         message_text = request.POST.get('message')
 
+        if len(phone_no) > 10:
+            messages.error(request, "The phone no should be less than 10 digits")
+            return redirect('user_home:support_helpline_section')
         Messages.objects.create(name=name, email=email, phone_no=phone_no, message=message_text)
         messages.success(request, "Your message has been sent")
     
